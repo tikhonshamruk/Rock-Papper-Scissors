@@ -1,0 +1,38 @@
+.pagination {
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: end; /* Центрирование элементов */
+}
+
+.pagination li {
+    display: flex;
+}
+
+.pagination a {
+    display: grid;         /* Включаем Grid Layout */
+  place-items: center;  
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход */
+}
+
+/* Стили для активной страницы */
+.pagination a.active {
+    background-color: var(--orange-faint-color); 
+    border-radius: 4px;
+    color: var(--light-color) /* Цвет текста активной страницы */
+}
+
+/* Стили при наведении */
+.pagination a:hover:not(.active) {
+    background-color: #f0f0f0; /* Фон при наведении */
+}
+
+.arrow-right{
+    background: none;
+    border: none;
+}
